@@ -7,9 +7,8 @@ Using the VBA tools inside Microsoft Excel, I constructed an algorithm to analyz
 ## Results
 After refactoring the code, I reduced the average code run time from 0.60 seconds to 0.13 seconds, a **78% increase in efficiency**. As seen in the images below, run-time is improved regardless of the selected year (2017 or 2018).
 
-![2017_runtime](https://github.com/Mishkanian/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png) 
+![2017:8_runtime](https://github.com/Mishkanian/stock-analysis/blob/main/Resources/VBA_Challenge_2017:8.png) 
 
-![2018_runtime](https://github.com/Mishkanian/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
 For convenience, buttons are added directly on the All Stocks Analysis worksheet to quickly access and compare the different code. The button "Module 2 Deliverable 1" activates the refactored code. Interestinly, **using this button decreases efficiency** by approximately 0.004 seconds as opposed to going directly inside VBA. To view the comparisons more in-depth, please open "VBA_Challenge.xlsm" and **enable macros**. In Visual Basic, the orignal subroutine is found in Module1 as Sub yearValueAnalysis(). The refactored code is found inside Module2Refactor as Sub AllStocksAnalysisRefactored().
 
