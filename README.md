@@ -5,6 +5,11 @@ Using the VBA tools inside Microsoft Excel, I constructed an algorithm to analyz
 ---
 
 ## Results
+
+### Stock Performance (2017 vs. 2018)
+Based on the analysis of the dataset for 12 specific stocks, it can be concluded that **these stocks performed far better in 2017 than in 2018.** Only one stock in the 2017 dataset had an overall negative return, whereas 10 stocks in 2018 had a negative return. ENPH and RUN are the only stocks to have a postive return in both years. The median return in 2017 was 41.54%, while the median *loss* in 2018 was -12.04%. The large, widespread decline in 2018 performace implies that there may have been external, rather than internal, factors that pulled down the success of these companies. However, further research and analysis are necessary before making decisive conclusions or offering recommendations for investments.
+
+### Refactoring Code
 After refactoring the code, I reduced the average code run time from 0.60 seconds to 0.13 seconds, a **78% increase in efficiency**. As seen in the images below, run-time is improved regardless of the selected year (2017 or 2018).
 
 ![2017:8_runtime](https://github.com/Mishkanian/stock-analysis/blob/main/Resources/VBA_Challenge_2017:8.png) 
