@@ -23,8 +23,22 @@ However, the **corrected code** is:
 ```
 If Cells(i - 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
 ```
+![Line104Error](https://github.com/Mishkanian/stock-analysis/blob/main/Resources/Line_104_error.png) 
+
+*(The highlighted portion of code above is Line 104, the location of the Overflow error.)*
+
+Additionally, omitting the tickers() array on Line 102 caused the stock ticker symbols to not display properly on the "All Stocks Analysis" workseet. The **incorrect line of code below** would cause the ticker symbols to display as numbers instead of letters (Example: 0, 1, 2, 3, ...).
+
+```
+ Cells(4 + i, 1).Value = tickerIndex
+ ```
+The **correct** line of code to display the ticker symbols as letters is:
+
+```
+ Cells(4 + i, 1).Value = tickers(tickerIndex)
+```
 
 ## Summary
 Refactoring code is an important process in the overall development cycle. It improves the efficiency of an operation, which is especially important when dealing with larger sets of data or more repetitve tasks. However, the decision to refactor opertational code can have unintended consequences and detriments. For example, it can break an opertion completely or interfere with other existing code. It can also be highly time consuming to identify the causes of issues and debug code.
 
-In the specific case of this project, refactoring the code may have been excessive due to the already quick run time (0.60 seconds) and the infrequent use. However, the changes made to the existing code does enable future users to upload larger sets of data without sacrificing as much run time efficiency.
+In the specific case of this project, refactoring the code may have been excessive due to the already quick run time (0.60 seconds) and the potentially infrequent use. However, the changes made to the existing code does enable future users to upload larger sets of data without sacrificing as much run time efficiency.
