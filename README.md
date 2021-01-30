@@ -10,7 +10,7 @@ After refactoring the code, I reduced the average code run time from 0.60 second
 ![2017:8_runtime](https://github.com/Mishkanian/stock-analysis/blob/main/Resources/VBA_Challenge_2017:8.png) 
 
 
-For convenience, buttons are added directly on the All Stocks Analysis worksheet to quickly access and compare the different code. The button "Module 2 Deliverable 1" activates the refactored code. Interestinly, **using this button decreases efficiency** by approximately 0.004 seconds as opposed to going directly inside VBA. To view the comparisons more in-depth, please open "VBA_Challenge.xlsm" and **enable macros**. In Visual Basic, the orignal subroutine is found in Module1 as Sub yearValueAnalysis(). The refactored code is found inside Module2Refactor as Sub AllStocksAnalysisRefactored().
+For convenience, buttons are added directly on the All Stocks Analysis worksheet to quickly access and compare the different code. The button "Module 2 Deliverable 1" activates the refactored code. Interestingly, **using this button decreases efficiency** by approximately 0.004 seconds as opposed to going directly inside VBA. To view the comparisons more in-depth, please open "VBA_Challenge.xlsm" and **enable macros**. In Visual Basic, the orignal subroutine is found in Module1 as Sub yearValueAnalysis(). The refactored code is found inside Module2Refactor as Sub AllStocksAnalysisRefactored().
 
 ### Challenges and Debugging Code
 Of the many errors that arose through refactoring the code, the most persistent issue was *Overflow (Error 6)* on Line 104. After hours of research and trials, it was found that the Overflow issue was caused due to the omission of the tickers() array in the conditional formulas on Line 71 and Line 80.
