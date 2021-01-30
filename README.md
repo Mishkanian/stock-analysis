@@ -1,7 +1,7 @@
 # VBA Stock Analysis
 
 ## Overview of Project
-Using the VBA tools inside Microsoft Excel, I constructed an algorithm to analyze over 3,000 stock data points in a user selected year to determine Total Daily Volume and Percentage Return. The purpose of this project was to refactor the operational VBA code to run faster by collecting the data more efficiently. The implementation of this improvment required changing the code to loop through the data only once, instead of multiple times.
+Using the VBA tools inside Microsoft Excel, I constructed an algorithm to analyze over 3,000 stock data points in a user selected year to determine Total Daily Volume and Percentage Return. The purpose of this project was to refactor the operational VBA code to run faster by collecting the data more efficiently. The implementation of this improvement required changing the code to loop through the data only once, instead of multiple times.
 ---
 
 ## Results
